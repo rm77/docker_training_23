@@ -1,0 +1,15 @@
+Port 9022
+AddressFamily any
+ListenAddress 0.0.0.0
+ListenAddress ::
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+LoginGraceTime 120
+PermitRootLogin prohibit-password
+StrictModes yes
+RSAAuthentication yes
+PubkeyAuthentication yes
+Subsystem       sftp    internal-sftp
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
