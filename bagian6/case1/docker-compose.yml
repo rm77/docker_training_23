@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+    nginx:
+      build:
+        context: ./build
+        dockerfile: Dockerfile
+      ports:
+        - 8443:443
+      depends_on:
+        - registry
+      volumes:
+        - ./certs:/certs
+        - ./auth:/authdata
+        - ./nginx-conf:/etc/nginx/
+
+    registry:
+      image: registry:2
+      volumes:
+        - ./data:/var/lib/registry

@@ -1,0 +1,8 @@
+to enable using insecure registry
+put the following lines into /etc/docker/daemon.json
+and restart docker daemon
+
+
+{
+	"insecure-registries" : [ "10.21.84.254:8443" ]
+}
