@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mysql1:
-    image: mysql:8.0-debian
+    image: mysql:5.7-debian
     restart: unless-stopped
     environment:
       - MYSQL_DATABASE=mydb
@@ -22,7 +22,11 @@ services:
      ports:
        - "34001:80"
      environment:
-       - MODE=development
+      - MODE=development
+      - MYSQL_DATABASE=mydb
+      - MYSQL_PASSWORD=mydb6789tyui
+      - MYSQL_ROOT_PASSWORD=mydb6789tyui
+      - MYSQL_ROOT_HOST=%
      volumes:
        - ./src:/var/www/localhost/htdocs/
        - ./platform/httpd.conf:/etc/apache2/httpd.conf
