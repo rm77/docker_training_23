@@ -27,6 +27,7 @@ RUN adduser user1 -D ; echo 'user1:user1qwerty' | chpasswd
 
 EXPOSE 5910
 EXPOSE 6666
+EXPOSE 11111
 
 
 ENTRYPOINT ["sh","-C","/tmp/start.sh"]
