@@ -1,0 +1,39 @@
+nodes:
+- address: 10.21.78.205
+  port: "22"
+  internal_address: ""
+  role:
+  - controlplane
+  - worker
+  hostname_override: "ajk-205"
+  user: ubuntu
+  docker_socket: /var/run/docker.sock
+  ssh_key: ""
+  ssh_key_path: ./id_rsa_ajk
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels: 
+    jenkins-worker: true
+    dns-worker: true
+  taints: []
+- address: 10.21.78.204
+  port: "22"
+  internal_address: ""
+  role:
+  - etcd
+  hostname_override: "ajk-207"
+  user: ubuntu
+  docker_socket: /var/run/docker.sock
+  ssh_key: ""
+  ssh_key_path: ./id_rsa_ajk
+  ssh_cert: ""
+  ssh_cert_path: ""
+  labels: 
+    dns-worker: true
+    app-worker: true
+  taints: []
+services:
+  etcd:
+    snapshot: true
+    creation: 3h
+    retention: 24h

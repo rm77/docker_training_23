@@ -6706,3 +6706,33 @@ k8s.io/apimachinery/pkg/util/wait.(*Group).StartWithChannel.func1
 	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:56
 k8s.io/apimachinery/pkg/util/wait.(*Group).Start.func1
 	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:73
+2023-11-08T13:18:43.651+0700	WARN	objectstore/dynamic_cache.go:481	unable to start watcher %!(EXTRA string=failed to list *unstructured.Unstructured: Get "https://127.0.0.1:16443/apis/apps/v1/daemonsets?resourceVersion=605": x509: certificate signed by unknown authority (possibly because of "crypto/rsa: verification error" while trying to verify candidate authority certificate "kubernetes"))
+github.com/vmware-tanzu/octant/internal/objectstore.(*DynamicCache).watchErrorHandler.func1
+	/__w/octant/octant/internal/objectstore/dynamic_cache.go:481
+k8s.io/client-go/tools/cache.(*Reflector).Run.func1
+	/__w/octant/octant/vendor/k8s.io/client-go/tools/cache/reflector.go:222
+k8s.io/apimachinery/pkg/util/wait.BackoffUntil.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:155
+k8s.io/apimachinery/pkg/util/wait.BackoffUntil
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:156
+k8s.io/client-go/tools/cache.(*Reflector).Run
+	/__w/octant/octant/vendor/k8s.io/client-go/tools/cache/reflector.go:220
+k8s.io/apimachinery/pkg/util/wait.(*Group).StartWithChannel.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:56
+k8s.io/apimachinery/pkg/util/wait.(*Group).Start.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:73
+2023-11-08T13:18:53.250+0700	WARN	objectstore/dynamic_cache.go:481	unable to start watcher %!(EXTRA string=failed to list *unstructured.Unstructured: Get "https://127.0.0.1:16443/apis/apps/v1/replicasets?resourceVersion=673": x509: certificate signed by unknown authority (possibly because of "crypto/rsa: verification error" while trying to verify candidate authority certificate "kubernetes"))
+github.com/vmware-tanzu/octant/internal/objectstore.(*DynamicCache).watchErrorHandler.func1
+	/__w/octant/octant/internal/objectstore/dynamic_cache.go:481
+k8s.io/client-go/tools/cache.(*Reflector).Run.func1
+	/__w/octant/octant/vendor/k8s.io/client-go/tools/cache/reflector.go:222
+k8s.io/apimachinery/pkg/util/wait.BackoffUntil.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:155
+k8s.io/apimachinery/pkg/util/wait.BackoffUntil
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:156
+k8s.io/client-go/tools/cache.(*Reflector).Run
+	/__w/octant/octant/vendor/k8s.io/client-go/tools/cache/reflector.go:220
+k8s.io/apimachinery/pkg/util/wait.(*Group).StartWithChannel.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:56
+k8s.io/apimachinery/pkg/util/wait.(*Group).Start.func1
+	/__w/octant/octant/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:73
