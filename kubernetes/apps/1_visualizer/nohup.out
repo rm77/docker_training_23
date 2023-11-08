@@ -1,0 +1,21 @@
+2023-11-08T05:11:18.310+0700	INFO	dash/watcher.go:117	watching config file	{"component": "config-watcher", "config": "/home/royyana/Kuliah/LAB/pjb_docker_2023/kubernetes/setup-cluster/singlehost/kubeconfig"}
+2023-11-08T05:11:18.314+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/resumeCronJob", "module-name": "overview"}
+2023-11-08T05:11:18.314+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/manifest", "module-name": "overview"}
+2023-11-08T05:11:18.314+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/deploymentConfiguration", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "overview/stopPortForward", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/cordon", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/uncordon", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/suspendCronJob", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/update", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/apply", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/containerEditor", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/serviceEditor", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "overview/startPortForward", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/cronJob", "module-name": "overview"}
+2023-11-08T05:11:18.315+0700	INFO	module/manager.go:87	registering action	{"component": "module-manager", "actionPath": "action.octant.dev/deleteObject", "module-name": "configuration"}
+2023-11-08T05:11:18.316+0700	WARN	plugin/manager.go:405	Unable to add /home/royyana/.config/octant/plugins to the plugin watcher. Error: no such file or directory
+
+github.com/vmware-tanzu/octant/pkg/plugin.(*Manager).watchPluginFiles
+	/__w/octant/octant/pkg/plugin/manager.go:405
+2023-11-08T05:11:18.351+0700	INFO	dash/dash.go:546	Dashboard is available at http://[::]:22222
+
