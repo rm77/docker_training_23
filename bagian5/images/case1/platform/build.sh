@@ -1,3 +1,3 @@
-BUILDKIT=1 docker build -t mywebserver:1.0 .
+docker build -t mywebserver:1.0 .
 
 

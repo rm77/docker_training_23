@@ -30,6 +30,8 @@ services:
   wordpress:
     depends_on: 
       - db
+    links:
+      - db
     image: wordpress:5.1.1-fpm-alpine
     restart: unless-stopped
     env_file: .env

@@ -45,3 +45,9 @@ nodes:
     nodeRegistration:
       kubeletExtraArgs:
         node-labels: "worker=true"
+containerdConfigPatches:
+  - |-
+    [plugins."io.containerd.grpc.v1.cri".registry.mirrors."10.21.84.254:8443"]
+      endpoint = ["http://10.21.84.254:8443"]
+      [plugins."io.containerd.grpc.v1.cri".registry.configs."10.21.84.254:8443".tls]
+      insecure_skip_verify = true 

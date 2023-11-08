@@ -5,6 +5,8 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
+  tls:
+  - secretName: mytls
   rules:
   -  host: 
      http:
@@ -28,5 +30,12 @@ spec:
         backend:
           service:
             name: coba-service
+            port:
+              number: 80
+      - pathType: ImplementationSpecific
+        path: /coba2(/|$)(.*)
+        backend:
+          service:
+            name: coba2-service
             port:
               number: 80
