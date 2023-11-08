@@ -9,6 +9,6 @@ docker push 10.21.84.254:8443/mywebserver:2.1
 
 
 docker tag mywebserver:2.1 docker.io/royyana/mywebserver:2.1
-docker login -u royyana -p XXXXXXXXXXdckr_pat_UU8I4_8G_A39PqBQmTdCRkdZWEQ 
+docker login -u user1 -p qazwsx 
 docker push docker.io/royyana/mywebserver:2.1
 
